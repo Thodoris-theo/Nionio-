@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #000000;
+        }
+
+        h2 {
+            color: #000000;
+        }
+
+        p {
+            color: #000000;
+        }
+
+        #partyForm {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        #partyFormDiv {
+            margin: 0 auto;
+            width: 20em;
+            position: relative;
+        }
+
+        #step2 {
+            display: none;
+        }
+
+        #results {
+            display: none;
+            margin-top: 40px;
+        }
+
+        #resultTable {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="checkbox"],
+        input[type="number"] {
+            margin-left: 5px;
+        }
+
+        input[type="checkbox"] {
+            width: 2em;
+            height: 1.3em;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #000000;
+        }
+    </style>
+    <title>Παιχνίδι Εκλογών</title>
+</head>
+
+<body>
+    <h1>Παιχνίδι Εκλογών</h1>
+
+    <div id="step1">
+        <h2>Βήμα 1: Ποιά κόμματα θα μπουν στην βουλή;</h2>
+        <p>Διαλέξτε κόμματα που πιστεύετε ότι θα μπουν στην βουλή.</p>
+        <div id="partyFormDiv">
+            <form id="partyForm">
+                <label for="party	1	">	 <input type="checkbox" name="parties" value="	ΚΟΜΜΟΥΝΙΣΤΙΚΟ ΚΟΜΜΑ ΕΛΛΑΔΑΣ (ΚΚΕ)	">	ΚΟΜΜΟΥΝΙΣΤΙΚΟ ΚΟΜΜΑ ΕΛΛΑΔΑΣ (ΚΚΕ)	</label><br>
+                <label for="party	2	">	 <input type="checkbox" name="parties" value="	ΑΝΤΑΡΣΥΑ	">	ΑΝΤΑΡΣΥΑ	</label><br>
+                <label for="party	3	">	 <input type="checkbox" name="parties" value="	ΟΚΔΕ	">	ΟΚΔΕ	</label><br>
+                <label for="party	4	">	 <input type="checkbox" name="parties" value="	ΚΚΕ (μλ)	">	ΚΚΕ (μλ)	</label><br>
+                <label for="party	5	">	 <input type="checkbox" name="parties" value="	ΝΕΑ  ΔΗΜΟΚΡΑΤΙΑ	">	ΝΕΑ  ΔΗΜΟΚΡΑΤΙΑ	</label><br>
+                <label for="party	6	">	 <input type="checkbox" name="parties" value="	ΦΩΝΗ  ΛΟΓΙΚΗΣ ΑΦΡΟΔΙΤΗ ΛΑΤΙΝΟΠΟΥΛΟΥ	">	ΦΩΝΗ  ΛΟΓΙΚΗΣ - ΑΦΡΟΔΙΤΗ ΛΑΤΙΝΟΠΟΥΛΟΥ	</label><br>
+                <label for="party	7	">	 <input type="checkbox" name="parties" value="	ΜΕΡΑ 25	">	ΜΕΡΑ 25	</label><br>
+                <label for="party	8	">	 <input type="checkbox" name="parties" value="	ΠΑΝΑΘΗΝΑΙΚΟ ΚΙΝΗΜΑ	">	ΠΑΝΑΘΗΝΑΙΚΟ ΚΙΝΗΜΑ	</label><br>
+                <label for="party	9	">	 <input type="checkbox" name="parties" value="	ΣΥΡΙΖΑ	">	ΣΥΡΙΖΑ	</label><br>
+                <label for="party	10	">	 <input type="checkbox" name="parties" value="	ΝΙΚΗ	">	ΝΙΚΗ	</label><br>
+                <label for="party	11	">	 <input type="checkbox" name="parties" value="	ΕΛΛΗΝΙΚΗ ΛΥΣΗ – ΚΥΡΙΑΚΟΣ ΒΕΛΟΠΟΥΛΟΣ	">	ΕΛΛΗΝΙΚΗ ΛΥΣΗ – ΚΥΡΙΑΚΟΣ ΒΕΛΟΠΟΥΛΟΣ	</label><br>
+                <label for="party	12	">	 <input type="checkbox" name="parties" value="	ΕΝΩΣΗ ΚΕΝΤΡΩΩΝ	">	ΕΝΩΣΗ ΚΕΝΤΡΩΩΝ	</label><br>
+                <label for="party	13	">	 <input type="checkbox" name="parties" value="	ΜΛ ΚΚΕ	">	ΜΛ ΚΚΕ	</label><br>
+                <label for="party	14	">	 <input type="checkbox" name="parties" value="	ΡΕΠΟΥΜΠΛΙΚΑΝΙΚΟ ΚΟΜΜΑ ΕΛΛΑΔΑΣΤ.Ρ.Α.Μ.Π.	">	ΡΕΠΟΥΜΠΛΙΚΑΝΙΚΟ ΚΟΜΜΑ ΕΛΛΑΔΑΣΤ.Ρ.Α.Μ.Π.	</label><br>
+                <label for="party	15	">	 <input type="checkbox" name="parties" value="	ΕΘΝΙΚΟ ΜΕΤΩΠΟ	">	ΕΘΝΙΚΟ ΜΕΤΩΠΟ	</label><br>
+                <label for="party	16	">	 <input type="checkbox" name="parties" value="	ΕΛΛΗΝΩΝ ΣΥΝΕΛΕΥΣΙΣ	">	ΕΛΛΗΝΩΝ ΣΥΝΕΛΕΥΣΙΣ	</label><br>
+                <label for="party	17	">	 <input type="checkbox" name="parties" value="	ΣΠΑΡΤΙΑΤΕΣ	">	ΣΠΑΡΤΙΑΤΕΣ	</label><br>
+                <label for="party	18	">	 <input type="checkbox" name="parties" value="	ΟΑΚΚΕ	">	ΟΑΚΚΕ	</label><br>
+                <label for="party	19	">	 <input type="checkbox" name="parties" value="	ΔΗΜΟΣΘΕΝΗΣ ΒΕΡΓΗΣ – ΕΛΛΗΝΕΣ ΟΙΚΟΛΟΓΟΙ	">	ΔΗΜΟΣΘΕΝΗΣ ΒΕΡΓΗΣ – ΕΛΛΗΝΕΣ ΟΙΚΟΛΟΓΟΙ	</label><br>
+                <label for="party	20	">	 <input type="checkbox" name="parties" value="	ΛΑΪΚΟ ΕΥΡΩΠΑΪΚΟ ΚΟΜΜΑ (Λ.ΕΥ.ΚΟ.)	">	ΛΑΪΚΟ ΕΥΡΩΠΑΪΚΟ ΚΟΜΜΑ (Λ.ΕΥ.ΚΟ.)	</label><br>
+                <label for="party	21	">	 <input type="checkbox" name="parties" value="	ΟΡΑΜΑ ΑΝΑΓΕΝΝΗΣΗΣ ΕΛΛΑΔΑΣ	">	ΟΡΑΜΑ ΑΝΑΓΕΝΝΗΣΗΣ ΕΛΛΑΔΑΣ	</label><br>
+                <label for="party	22	">	 <input type="checkbox" name="parties" value="	– ΕΥ – ΚΙΝΗΣΗ	">	– ΕΥ – ΚΙΝΗΣΗ	</label><br>
+                <label for="party	23	">	 <input type="checkbox" name="parties" value="	ΠΛΕΥΣΗ ΕΛΕΥΘΕΡΙΑΣ – ΖΩΗ ΚΩΝΣΤΑΝΤΟΠΟΥΛΟΥ	">	ΠΛΕΥΣΗ ΕΛΕΥΘΕΡΙΑΣ – ΖΩΗ ΚΩΝΣΤΑΝΤΟΠΟΥΛΟΥ	</label><br>
+                <label for="party	24	">	 <input type="checkbox" name="parties" value="	ΚΙΝΗΜΑ ΦΤΩΧΩΝ	">	ΚΙΝΗΜΑ ΦΤΩΧΩΝ	</label><br>
+                <label for="party	25	">	 <input type="checkbox" name="parties" value="	ΠΝΟΗ ΔΗΜΟΚΡΑΤΙΑΣ	">	ΠΝΟΗ ΔΗΜΟΚΡΑΤΙΑΣ	</label><br>
+                <label for="party	26	">	 <input type="checkbox" name="parties" value="	ΨΗΦΙΑΚΟΣ ΕΛΛΗΝΙΣΜΟΣ ΕΝ ΤΟ ΟΛΟΝ	">	ΨΗΦΙΑΚΟΣ ΕΛΛΗΝΙΣΜΟΣ ΕΝ ΤΟ ΟΛΟΝ	</label><br>
+                <label for="party	27	">	 <input type="checkbox" name="parties" value="	ΟΙΚΟΛΟΓΟΙ ΠΡΑΣΙΝΟΙ – ΠΡΑΣΙΝΗ ΕΝΟΤΗΤΑ	">	ΟΙΚΟΛΟΓΟΙ ΠΡΑΣΙΝΟΙ – ΠΡΑΣΙΝΗ ΕΝΟΤΗΤΑ	</label><br>
+                <label for="party	28	">	 <input type="checkbox" name="parties" value="	ΠΑΣΟΚ – ΚΙΝΗΜΑ ΑΛΛΑΓΗΣ	">	ΠΑΣΟΚ – ΚΙΝΗΜΑ ΑΛΛΑΓΗΣ	</label><br>
+                <label for="party	29	">	 <input type="checkbox" name="parties" value="	ΠΡΑΣΙΝΟ ΚΑΙ ΜΩΒ	">	ΠΡΑΣΙΝΟ ΚΑΙ ΜΩΒ	</label><br>
+                <label for="party	30	">	 <input type="checkbox" name="parties" value="	ΠΑΤΡΙΩΤΙΚΟΣ ΣΥΝΑΣΠΙΣΜΟΣ	">	ΠΑΤΡΙΩΤΙΚΟΣ ΣΥΝΑΣΠΙΣΜΟΣ	</label><br>
+                <label for="party	31	">	 <input type="checkbox" name="parties" value="	ΑΘΑΝΑΣΙΟΣ ΓΕΩΡΓΙΟΥ	">	ΑΘΑΝΑΣΙΟΣ ΓΕΩΡΓΙΟΥ	</label><br>
+                <label for="party	32	">	 <input type="checkbox" name="parties" value="	ΣΠΕΝΤΖΑΣ ΠΟΛΥΚΑΡΠΟΣ ΑΣΥΡΜΑΤΙΣΤΗΣ ΤΟΥ ΠΛΟΙΟΥ ΠΟΘΥΤΗ 1978 ΤΡΙΓΩΝΟ ΒΕΡΜΟΥΔΩΝ UFO USO EXTRATERRESTIALS EINSTEIN ΣΑΝΤΟΡΙΝΗΣ ΠΑΥΛΟΣ	">	ΣΠΕΝΤΖΑΣ ΠΟΛΥΚΑΡΠΟΣ ΑΣΥΡΜΑΤΙΣΤΗΣ ΤΟΥ ΠΛΟΙΟΥ ΠΟΘΥΤΗ 1978 ΤΡΙΓΩΝΟ ΒΕΡΜΟΥΔΩΝ UFO USO EXTRATERRESTIALS EINSTEIN ΣΑΝΤΟΡΙΝΗΣ ΠΑΥΛΟΣ	</label><br>
+
+
+                <!-- Add more party checkboxes here if needed -->
+                <br>
+            </form>
+        </div>
+        <button type="button" onclick="goToStep2()">Επόμενο</button>
+    </div>
+
+    <div id="step2">
+        <h2>Βήμα 2: Πρόβλεψη Ποσοστού Κομμάτων</h2>
+        <p>Προβλέψτε το ποσοστό που θα λάβει το κάθε κόμμα στις εκλογές:</p>
+        <form id="predictionForm">
+            <!-- Parties will be dynamically generated here -->
+            <br>
+            <button type="button" onclick="calculateResults()">Υπολογισμός Αποτελεσμάτων</button>
+        </form>
+    </div>
+
+    <div id="results">
+        <h2>Αποτελέσματα</h2>
+        <div id="resultTable"></div>
+        <button id="copyButton" type="button" onclick="copyToClipboard()">Αντιγραφή στο Πρόχειρο</button>
+    </div>
+
+    <script>
+        // Define the parties list
+        var parties = ['Party 1', 'Party 2', 'Party 3', 'party 4']; // Add more parties if needed
+
+        function goToStep2() {
+            var selectedParties = Array.from(document.querySelectorAll('input[name="parties"]:checked'))
+                .map(checkbox => checkbox.value);
+
+            if (selectedParties.length === 0) {
+                alert('Παρακαλώ διαλέξτε τουλάχιστον ένα κόμμα.');
+                return;
+            }
+
+            var predictionForm = document.getElementById('predictionForm');
+            predictionForm.innerHTML = '';
+
+            selectedParties.forEach(party => {
+                predictionForm.innerHTML += `
+                    <label for="${party}">
+                        ${party}: <input type="number" name="${party}" min="3" max="100" step="0.01" required> %
+                    </label><br>`;
+            });
+
+            predictionForm.innerHTML += `<br><button type="button" onclick="calculateResults()">Υπολογισμός Αποτελεσμάτων</button>`;
+
+            document.getElementById('step1').style.display = 'none';
+            document.getElementById('step2').style.display = 'block';
+        }
+
+        function calculateResults() {
+            var predictionForm = document.getElementById('predictionForm');
+            var totalVotes = 0;
+            var partyVotes = {};
+
+            var inputs = Array.from(predictionForm.getElementsByTagName('input'));
+            var invalidInputs = inputs.filter(input => !input.checkValidity());
+
+            if (invalidInputs.length > 0) {
+                alert('Παρακαλώ εισάγετε ένα έγκυρο ποσοστό (ελάχιστο 3%) για όλα τα κόμματα.');
+                return;
+            }
+
+            inputs.forEach(input => {
+                var party = input.name;
+                var percentage = parseFloat(input.value);
+                partyVotes[party] = percentage;
+                totalVotes += percentage;
+            });
+
+            if (totalVotes > 100) {
+                alert('Το σύνολο ξεπερνάει το 100%. Προσαρμόστε τις προβλέψεις.');
+                return;
+            }
+
+            var sortedResults = Object.keys(partyVotes).sort(function(a, b) {
+                return partyVotes[b] - partyVotes[a];
+            });
+
+            var resultTable = document.getElementById('resultTable');
+            resultTable.innerHTML = '';
+
+            sortedResults.forEach(party => {
+                var percentage = partyVotes[party];
+                var partyResult = `<p>${party}: ${percentage}%</p>`;
+                resultTable.innerHTML += partyResult;
+            });
+
+            var otherPercentage = 100 - totalVotes;
+            var otherResult = `<p>Άλλο (εκτός βουλής): ${otherPercentage}%</p>`;
+            resultTable.innerHTML += otherResult;
+
+            document.getElementById('step2').style.display = 'none';
+            document.getElementById('results').style.display = 'block';
+        }
+
+        function copyToClipboard() {
+            var resultTable = document.getElementById('resultTable');
+            var range = document.createRange();
+            range.selectNode(resultTable);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            alert("Τα αποτελέσματα αντιγράφηκαν στο πρόχειρο.");
+        }
+    </script>
+</body>
+
+</html>
